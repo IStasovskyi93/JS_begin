@@ -1,7 +1,6 @@
 let randomNumber = Math.random() * 6;
 randomNumber = Math.floor(randomNumber);
 let userQuestion = prompt("What you want to know?");
-console.log(randomNumber);
 switch (randomNumber) {
   case 0:
     console.log(`${userQuestion} \n Be carefull on tuesdays`);
