@@ -1,12 +1,6 @@
-let myCar = {
-  make: "France",
-  model: "Renault",
-  class: "Scenic",
-  generation: 3,
-  year: 2013,
-  distance: "165000 km",
-};
-let color;
-myCar.color = "Dark charry";
-
-console.table(myCar[("make", "model")]);
+let people = { friends: [] };
+let Vova = { name: "Vova", lastName: "Erpa", ID: 3456 };
+let Sanya = { name: "Sanya", lastName: "Polo", ID: 7689 };
+let Denya = { name: "Denya", lastName: "Volo", ID: 7893 };
+people.friends.push(Vova, Sanya, Denya);
+console.table(people.friends);
