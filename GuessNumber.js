@@ -1,7 +1,11 @@
 let maxDigit = 100;
 let randomDigit = Math.random() * (maxDigit + 1);
 randomDigit = Math.floor(randomDigit);
-let userDigit = Number(prompt(`Input digit from 0 to ${maxDigit}`));
+let userDigit = Number(
+  prompt(
+    `WELCOME to game "Guess MAGIC digit"\nComputer create digit from 0 to 100.\nGuess it\nInput digit from 0 to ${maxDigit}`
+  )
+);
 let answers = [""];
 let guess = false;
 while (!guess && userDigit != "q") {
