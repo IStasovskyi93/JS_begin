@@ -8,3 +8,11 @@ do {
   score.push(condition);
 } while (condition != 100);
 console.log(score);
+
+/* Cycle for*/
+let myWork = [];
+digit = 0;
+for (let lesson = []; lesson.length < 10; digit++) {
+  lesson.push({ name: "lesson" + digit, status: digit % 2 ? true : false });
+}
+console.table(lesson);
