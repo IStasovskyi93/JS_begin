@@ -1,9 +1,9 @@
-/*Cycle for of.
-I used it for iteration on array and show elements*/
-let box = [];
-for (let count = 0; box.length < 10; count++) {
-  box.push(count);
+let poem = "Gay is russian poet";
+let forget = "is";
+for (let counter = 0; counter < 10; counter++) {
+  if (poem[counter] + poem[counter + 1] === "is") {
+    continue;
+  }
+  poem = poem + poem[counter] + poem[counter + 2] + " ";
 }
-for (let item of box) {
-  console.log(item);
-}
+console.log(poem);

@@ -39,3 +39,17 @@ for (let count = 0; box.length < 10; count++) {
 for (let item of box) {
   console.log(item);
 }
+
+/*Cycle for objects (for in)*/
+let car = { model: "Ferarri", color: "red", year: 1995 };
+for (let value in car) {
+  console.log(`${value} --> ${car[value]}`);
+}
+
+//3-objects in array I show with (for of and for in)
+let box1 = [{ model: "ferarri" }, { year: 1995 }, { model: "Red horse" }];
+for (let value of box1) {
+  for (let item in value) {
+    console.log(item + "--->" + value[item]);
+  }
+}
