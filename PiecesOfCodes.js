@@ -53,3 +53,11 @@ for (let value of box1) {
     console.log(item + "--->" + value[item]);
   }
 }
+
+/*Immediatly involved function expression*/
+let number = 1000;
+let result = (function () {
+  let number = 500;
+  console.log(number);
+})();
+console.log(result);
