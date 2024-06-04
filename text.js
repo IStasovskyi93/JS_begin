@@ -1,7 +1,10 @@
-function counter(digit) {
-  while (digit <= 10) {
-    console.log(digit);
-    digit += 1;
+let val = 10;
+function tester(val) {
+  val += 10;
+  if (val < 100) {
+    return tester(val);
   }
+  return val;
 }
-counter(4);
+tester(val);
+console.log(val);
