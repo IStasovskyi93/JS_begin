@@ -1,9 +1,13 @@
-let poem = "Gay is russian poet";
-let forget = "is";
-for (let counter = 0; counter < 10; counter++) {
-  if (poem[counter] + poem[counter + 1] === "is") {
-    continue;
+class Person {
+  constructor(firstname, lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
   }
-  poem = poem + poem[counter] + poem[counter + 2] + " ";
 }
-console.log(poem);
+
+let vova = new Person("Vova", "Erpelov");
+let sanya = new Person("Sasha", "Polozhai");
+let myFriends = [vova, sanya];
+
+console.log(vova.firstname + " " + vova.lastname);
+console.log(sanya.lastname + " " + sanya.firstname);
