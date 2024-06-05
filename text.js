@@ -1,10 +1,13 @@
-let val = 10;
-function tester(val) {
-  val += 10;
-  if (val < 100) {
-    return tester(val);
+class Person {
+  constructor(firstname, lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
   }
-  return val;
 }
-tester(val);
-console.log(val);
+
+let vova = new Person("Vova", "Erpelov");
+let sanya = new Person("Sasha", "Polozhai");
+let myFriends = [vova, sanya];
+
+console.log(vova.firstname + " " + vova.lastname);
+console.log(sanya.lastname + " " + sanya.firstname);
