@@ -10,6 +10,7 @@ class Person {
 
 let vova = new Person("Vova", "Erpelov");
 let sanya = new Person("Sasha", "Polozhai");
-let myFriends = [vova, sanya];
-
-console.log(vova.fullName());
+let person1 = vova.fullName();
+let person2 = sanya.fullName();
+console.log(`${person1} and ${person2}`);
+console.log(`${vova.fullName()} and ${sanya.fullName()}`);
