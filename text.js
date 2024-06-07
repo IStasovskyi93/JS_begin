@@ -1,16 +1,20 @@
-class Person {
-  constructor(firstname, lastname) {
-    this.firstname = firstname;
-    this.lastname = lastname;
+class PriceList {
+  _x;
+  constructor(x) {
+    // this.name = name;
+    this._x = x;
   }
-  fullName() {
-    return this.firstname + " " + this.lastname;
+  get x() {
+    return this._x;
+  }
+  set x(x) {
+    this._x = x;
   }
 }
 
-let vova = new Person("Vova", "Erpelov");
-let sanya = new Person("Sasha", "Polozhai");
-let person1 = vova.fullName();
-let person2 = sanya.fullName();
-console.log(`${person1} and ${person2}`);
-console.log(`${vova.fullName()} and ${sanya.fullName()}`);
+//
+// totalPrice(quantity) {
+//   return quantity + this.name + "cost" + quantity * this.price + "$";
+// }
+let doll = new PriceList(5);
+console.log(doll);
