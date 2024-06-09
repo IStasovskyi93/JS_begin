@@ -1,20 +1,19 @@
-class PriceList {
-  _x;
-  constructor(x) {
-    // this.name = name;
-    this._x = x;
-  }
-  get x() {
-    return this._x;
-  }
-  set x(x) {
-    this._x = x;
-  }
+let names = [
+  "Laurence",
+  "Mike",
+  "Larry",
+  "Kim",
+  "Joanne",
+  "Laurence",
+  "Mike",
+  "Laurence",
+  "Mike",
+  "Laurence",
+  "Mike",
+];
+function compare(arrName) {
+  while (arrName[element] === arrName[(element += 1)])
+    arrName.splice(arrName.indexOf(element), 1);
 }
-
-//
-// totalPrice(quantity) {
-//   return quantity + this.name + "cost" + quantity * this.price + "$";
-// }
-let doll = new PriceList(5);
-console.log(doll);
+let newNames = compare(names);
+console.log(newNames);
