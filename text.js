@@ -11,9 +11,15 @@ let names = [
   "Laurence",
   "Mike",
 ];
-function compare(arrName) {
-  while (arrName[element] === arrName[(element += 1)])
-    arrName.splice(arrName.indexOf(element), 1);
+function outCopy(arrName) {
+  let newArr = [arrName[0]];
+  for (let item = 1; newArr.length == item; i += 1) {
+    if (arrName[item] !== newArr[item - 1]) {
+      newArr.push(arrName[item]);
+    } else {
+      continue;
+    }
+  }
+  return newArr;
 }
-let newNames = compare(names);
-console.log(newNames);
+console.log(outCopy(names));
