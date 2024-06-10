@@ -61,3 +61,33 @@ let result = (function () {
   console.log(number);
 })();
 console.log(result);
+
+/*Replace vovels to random numbers. Create password*/
+
+let sentence = "I love JavaScript";
+let vovels = ["a", "e", "i", "o", "u"];
+sentence = sentence.toLowerCase();
+for (let letter of sentence) {
+  for (let vovel of vovels) {
+    if (letter === vovel) {
+      let randomNumber = Math.random() * 9;
+      randomNumber = Math.floor(randomNumber);
+      sentence = sentence.replace(letter, randomNumber);
+    }
+  }
+}
+console.log(sentence);
+
+/*Function wich capitalize first letter of all words in sentence*/
+
+let poem = "thIs will be capiTalized for each word";
+function upLetter(sentence) {
+  let newSentence = [];
+  let words = sentence.split(" ");
+  for (let word of words) {
+    let newWord = word[0].toUpperCase() + word.slice(1);
+    newSentence.push(newWord);
+  }
+  return newSentence.join(" ");
+}
+console.log(upLetter(poem));
