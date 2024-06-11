@@ -1,6 +1,5 @@
 /*Range in function Math.random() * 6 will be from 0 to 5 */
-let randomNumber = Math.random() * 6;
-randomNumber = Math.floor(randomNumber);
+let randomNumber = Math.floor(Math.random() * 6);
 let userQuestion = prompt("What you want to know?");
 switch (randomNumber) {
   case 0:
