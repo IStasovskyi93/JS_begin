@@ -91,3 +91,31 @@ function upLetter(sentence) {
   return newSentence.join(" ");
 }
 console.log(upLetter(poem));
+
+/*create range random digits from min to max */
+//let randomDigit = Math.floor(Math.random() * (100 - 1) + 1);
+function randomDigit(min = 1, max = 100) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+let arrDigits = [];
+for (let i = 0; i < 40; i += 1) {
+  let myDigit = randomDigit(60, 100);
+  arrDigits.push(myDigit);
+}
+console.log(arrDigits.length, arrDigits);
+
+/*Replace letter in word*/
+
+function scrembler(word) {
+  let arrLetter = word.toLowerCase().split("");
+  let newWord = [];
+  let lengthWord = arrLetter.length;
+  for (let letterIndex = 0; letterIndex < lengthWord; letterIndex += 1) {
+    let randomLetter = Math.floor(Math.random() * arrLetter.length);
+    newWord.push(arrLetter[randomLetter]);
+    arrLetter.splice(randomLetter, 1);
+  }
+  return newWord.join("");
+}
+
+console.log(scrembler("Java Script"));
