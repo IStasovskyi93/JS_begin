@@ -104,8 +104,11 @@ for (let i = 0; i < 40; i += 1) {
 }
 console.log(arrDigits.length, arrDigits);
 
-/*Replace letter in word*/
-
+/**
+ * Replace letters in word
+ * @param {string} word
+ * @returns same word with mixed letters
+ */
 function scrembler(word) {
   let arrLetter = word.toLowerCase().split("");
   let newWord = [];
