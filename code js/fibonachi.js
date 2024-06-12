@@ -27,4 +27,4 @@ const fibonachi = function (finalDigit) {
   return digits;
 };
 
-console.log(fibonachi(10));
+console.log(fibonachi(60));
