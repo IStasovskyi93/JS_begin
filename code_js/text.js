@@ -1,12 +1,4 @@
-"use strict";
-const gratulation = document.querySelector(".output");
-const bodyElement = document.body;
-const childNodes = bodyElement.childNodes;
-console.log(childNodes);
-const childrenNodes = bodyElement.children;
-const imageBird = document.querySelector("img");
-const birds = document.querySelectorAll(".birds li");
-birds.forEach((bird) => console.log(bird));
-console.log(childrenNodes);
-console.log(gratulation, imageBird);
-console.log(birds[0], birds[3]);
+let output = document.querySelector(".output");
+console.log(output.textContent);
+const urlAdress = document.URL;
+console.log(urlAdress);
