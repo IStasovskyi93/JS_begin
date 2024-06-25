@@ -70,8 +70,7 @@ sentence = sentence.toLowerCase();
 for (let letter of sentence) {
   for (let vovel of vovels) {
     if (letter === vovel) {
-      let randomNumber = Math.random() * 9;
-      randomNumber = Math.floor(randomNumber);
+      let randomNumber = Math.floor(Math.random() * 9);
       sentence = sentence.replace(letter, randomNumber);
     }
   }
@@ -94,6 +93,7 @@ console.log(upLetter(poem));
 
 /*create range random digits from min to max */
 //let randomDigit = Math.floor(Math.random() * (100 - 1) + 1);
+
 function randomDigit(min = 1, max = 100) {
   return Math.floor(Math.random() * (max - min) + min);
 }
