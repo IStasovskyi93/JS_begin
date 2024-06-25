@@ -1,39 +1,38 @@
 let maxDigit = 100;
-let randomDigit = Math.random() * (maxDigit + 1);
-randomDigit = Math.floor(randomDigit);
+let randomDigit = Math.floor(Math.random() * (maxDigit + 1));
 let userDigit = Number(
   prompt(
     `WELCOME to game "Guess MAGIC digit"\nComputer create digit from 0 to 100.\nGuess it\nInput digit from 0 to ${maxDigit}`
   )
 );
-let answers = [""];
+let userAnswers = [""];
 let guess = false;
 while (!guess && userDigit != "q") {
   if (
     userDigit > randomDigit &&
     userDigit >= 0 &&
-    userDigit <= 100 &&
+    userDigit <= maxDigit &&
     userDigit != ""
   ) {
-    answers.push(userDigit);
+    userAnswers.push(userDigit);
     userDigit = prompt(
-      `Atempt ${answers.length}. \nTry else. Your choice ${userDigit} bigger then MAGIC digit. \nInput digit from 0 to ${maxDigit} or press q to exit.`
+      `Atempt ${userAnswers.length}. \nTry else. Your choice ${userDigit} bigger then MAGIC digit. \nInput digit from 0 to ${maxDigit} or press q to exit.`
     );
   } else if (
     userDigit < randomDigit &&
     userDigit >= 0 &&
-    userDigit <= 100 &&
+    userDigit <= maxDigit &&
     userDigit != ""
   ) {
-    answers.push(userDigit);
+    userAnswers.push(userDigit);
     userDigit = prompt(
-      `Atempt ${answers.length}. \nTry else. Your digit ${userDigit} less then MAGIC digit. \nInput digit from 0 to ${maxDigit} or press q to exit.`
+      `Atempt ${userAnswers.length}. \nTry else. Your digit ${userDigit} less then MAGIC digit. \nInput digit from 0 to ${maxDigit} or press q to exit.`
     );
   } else if (userDigit == randomDigit) {
-    answers.splice(0, 1);
-    answers.push(userDigit);
+    userAnswers.splice(0, 1);
+    userAnswers.push(userDigit);
     alert(
-      `Gratulation, You are find MAGIC digit ---${randomDigit}--- \nYour attempts score ${answers.length} and you inputed ${answers}.`
+      `Gratulation, You are find MAGIC digit ---${randomDigit}--- \nYour attempts score ${userAnswers.length} and you inputed ${userAnswers}.`
     );
     guess = true;
   } else {
