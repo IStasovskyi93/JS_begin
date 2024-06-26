@@ -1,5 +1,8 @@
-html {
-  background-color: rgb(255, 230, 200);
+body {
+  margin: 0;
+}
+#navBar {
+  display: flex;
 }
 h1 {
   color: rgb(40, 9, 75);
@@ -8,4 +11,10 @@ h1 {
 }
 .output {
   font-weight: 700;
+}
+.nameSpaces {
+  display: flex;
+  height: 130px;
+  width: 500px;
+  border: 2px rebeccapurple solid;
 }
