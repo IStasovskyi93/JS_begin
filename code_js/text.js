@@ -17,6 +17,11 @@ function changeColor() {
   )}})`;
   document.body.style.backgroundColor = draw;
 }
+push.style.backgroundColor = "red";
+
+let bird = document.querySelectorAll("li");
+bird.forEach((item) => console.log(item));
+console.log(bird);
 /*const btn = document.getElementById("push");
 
 function random(number) {
