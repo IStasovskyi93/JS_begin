@@ -27,5 +27,6 @@ rgba(${randomNumber(255)}, ${randomNumber(255)}, ${randomNumber(
 let bird = document.querySelectorAll("li");
 
 let names = document.querySelector("div.nameSpaces");
+names.setAttribute("style", "background-color: antiquewhite;");
 
 /*`rgb(${randomNumber(255)}, ${randomNumber(255)}, ${randomNumber(255)})`;*/
