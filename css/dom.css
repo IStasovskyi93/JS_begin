@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 #navBar {
   display: flex;
@@ -47,4 +47,10 @@ button:hover {
   font-weight: 900;
   padding: 13px 13px;
   color: rgb(234, 236, 103);
+}
+div.birds {
+  display: flex;
+}
+div#flexBlock {
+  display: flex;
 }
